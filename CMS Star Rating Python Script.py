@@ -9,7 +9,7 @@ import random
 # Ignore all warnings
 warnings.simplefilter("ignore")
 
-path = "C:\\Users\\buchanandm\\OneDrive - UPMC\\Documents\\Other Projects\\CMS Star Ratings\\"
+path = "your_path"
 
 # Use this if you're using the SAS data file
 # df, meta = pyreadstat.read_sas7bdat(path + 'all_data_2021apr.sas7bdat')
@@ -145,10 +145,10 @@ for i in range(1, 6):
 
 # Bar chart of rankings
 
-# Get PUH/SHY Ranking, Summary Score, and Group Scores
+# Get Your Facility Ranking, Summary Score, and Group Scores
 for i in ['RANK', 'SUMMARY', 'MORT', 'SAFETY', 'READMIT', 'PAT_EXP', 'TIME']:
     print(i)
-    print(df5[i][df5['PROVIDER_ID'] == 390164],"\n")
+    print(df5[i][df5['PROVIDER_ID'] == 111111],"\n") # Facility ID goes here
 
 # Get the 5-Star facilities averages
 for i in ['MORT', 'SAFETY', 'READMIT', 'PAT_EXP', 'TIME']:
